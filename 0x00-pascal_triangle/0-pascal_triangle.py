@@ -10,7 +10,8 @@ def pascal_triangle(n):
 
     pasTran = []
 
-    for i in range(0, n):
+    for i in range(n):
+        # first element
         tempList = [1]
         if i == 0:
             pasTran.append(tempList)
@@ -19,8 +20,10 @@ def pascal_triangle(n):
         k = i - 1
         for j in range(len(pasTran[k])):
             if j + 1 == len(pasTran[k]):
+                # last element
                 tempList.append(1)
                 break
+            # Add two previous values to get current next value
             nextVal = pasTran[k][j] + pasTran[k][j + 1]
             tempList.append(nextVal)
         pasTran.append(tempList)
