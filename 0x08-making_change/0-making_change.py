@@ -19,17 +19,19 @@ def makeChange(coins, total):
 
     change = -1
 
-    if coins:
+    if len(coins):
         coins = sorted(coins, reverse=True)
         noOfCoins = len(coins)
         change = 0
 
         for i in range(noOfCoins):
-            while True:
-                if total >= 1:
-                    if total - coins[i] > 0:
-                        change += 1
-                        total -= coins[i]
+            while total:
+                print('i"m here')
+                # if total >= 1:
+                #    if total - coins[i] > 0:
+                if total // coins[i] > 0:
+                    change += 1
+                    total -= coins[i]
                 else:
                     break
 

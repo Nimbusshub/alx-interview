@@ -4,6 +4,7 @@ Main file for testing
 """
 
 makeChange = __import__('0-making_change').makeChange
+print('I run')
 
 print(makeChange([1, 2, 25], 37))
 
