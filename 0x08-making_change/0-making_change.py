@@ -26,7 +26,6 @@ def makeChange(coins, total):
 
         for i in range(noOfCoins):
             while total:
-                print('i"m here')
                 # if total >= 1:
                 #    if total - coins[i] > 0:
                 if total // coins[i] > 0:
