@@ -8,7 +8,7 @@ def island_perimeter(grid):
         grid (list[list(int)]): An island
 
     Returns:
-        perimeter (int): Perimeter of the island
+        perimeter (int): Perimeter of the island.
 
     """
     perimeter = 0
