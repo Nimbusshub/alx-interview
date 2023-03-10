@@ -10,8 +10,7 @@ def primeNumbers(n):
             n (int): upper boundary of range. lower boundary is always 1
 
         Return:
-            primeNos (List[int]): list of prime numbers between 1 and n           
-
+            primeNos (List[int]): list of prime numbers between 1 and n
     """
     primeNos = []
     filterd = [True] * (n + 1)
